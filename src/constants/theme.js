@@ -8,6 +8,8 @@ const COLORS = {
   gray4: "#333333", //login input
   gray5: "#b3b3b3", // login texts
   gray6: "#222222",
+  gray7: "#454545",
+  gray8: "#737373",
   black1: "#0A0806", //login background card
   orange1: "#e87c03", //warning message and border login input
 };

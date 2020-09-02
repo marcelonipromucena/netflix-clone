@@ -54,17 +54,29 @@ export const WrapperCenterContent = styled.div`
 
   & > p.h1 {
     width: 600px;
+    @media (max-width: 768px) {
+      width: 90%;
+      font-size: 30px;
+    }
   }
   & > p.h2 {
     margin: 15px 0;
   }
   & > p.h3 {
     margin-bottom: 15px;
+    @media (max-width: 768px) {
+      width: 90%;
+    }
   }
 `;
 
 export const WrapperEmailInput = styled.div`
   display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+  }
 `;
 
 export const EmailInput = styled.input`
@@ -73,6 +85,12 @@ export const EmailInput = styled.input`
   font-size: 16px;
   height: 60px;
   border: none;
+
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const GetStartedButton = styled.button`
@@ -92,6 +110,10 @@ export const GetStartedButton = styled.button`
     background: ${COLORS.darkred};
     transition: all 0.3s ease;
   }
+
+  @media (max-width: 768px) {
+    margin-top: 15px;
+  }
 `;
 
 export const Section = styled.div`
@@ -99,15 +121,40 @@ export const Section = styled.div`
   background: ${COLORS.black1};
   display: flex;
   border-bottom: 8px solid ${COLORS.gray6};
+
+  @media (max-width: 768px) {
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+  }
 `;
 
 export const WrapperSessionText = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: center;
+  height: 100%;
   width: 550px;
   padding: 0 30px 0 60px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  & > p.h1 {
+    width: 600px;
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 30px;
+    }
+  }
+  & > p.h2 {
+    margin: 15px 0;
+    padding:5px;
+  }
 `;
 
 export const WrapperSessionImage = styled.div`
@@ -119,6 +166,16 @@ export const WrapperSessionImage = styled.div`
   & > img {
     width: 500px;
     height: 350px;
+
+    @media (max-width: 768px) {
+      width: 90%;
+      height: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
   }
 `;
 export const FAQSection = styled.div`
@@ -157,6 +214,12 @@ export const DropdownTitle = styled.div`
     transform: translateY(-50%) rotate(90deg);
   }
 
+
+  @media(max-width:768px){
+      width:100%;
+      font-size:20px;
+    }
+    
   & > svg:focus + .tab-1,
   & > svg:focus + .tab-2,
   & > svg:focus + .tab-3,
@@ -164,6 +227,8 @@ export const DropdownTitle = styled.div`
   & > svg:focus + .tab-5,
   & > svg:focus + .tab-6 {
     display: block;
+
+
   }
 `;
 export const DropdownContent = styled.div`
@@ -185,24 +250,12 @@ export const SubscribeSection = styled.div`
   justify-content: row;
   padding-bottom: 40px;
   border-bottom: 8px solid ${COLORS.gray6};
-`;
 
-export const FooterSection = styled.div`
-  background: ${COLORS.black1};
-  padding-left: 150px;
-  height: 430px;
 
-  & > p{
-    padding-top:80px;
+  & p.h3{
+    @media (max-width: 768px) {
+      width:90%;
+      text-align:center;
+    }
   }
-`;
-export const FooterGrid = styled.div`
-  display: grid;
-  grid-template-columns: auto auto auto;
-`;
-export const FooterLink = styled.a`
-  color: ${COLORS.gray2};
-  text-decoration: none;
-  padding: 5px 12px 10px 0;
-  font-size: 0.8rem;
 `;

@@ -1,39 +1,34 @@
 import React from "react";
-
-import {
-  HeaderContainer,
-  OverlayContainer,
-  Navbar,
-  NavbarLeft,
-  NavbarRight,
-  Logo,
-  WrapperCenterContent,
-  WrapperEmailInput,
-  EmailInput,
-  GetStartedButton,
-  Section,
-  WrapperSessionText,
-  WrapperSessionImage,
-  FAQSection,
-  SubscribeSection,
-  DropdownTitle,
-  DropdownContent,
-  FooterSection,
-  FooterLink,
-  FooterGrid,
-} from "./styles";
 import { FiChevronRight, FiX } from "react-icons/fi";
 
-import Button from "../../components/Button";
-import Text from "../../components/Text";
-
-import logo from "../../assets/img/logo.svg";
 import image01 from "../../assets/img/img1.png";
 import image02 from "../../assets/img/img2.png";
 import image03 from "../../assets/img/img3.png";
 import image04 from "../../assets/img/img4.png";
-
-import { SIZES,COLORS } from "../../constants/theme";
+import logo from "../../assets/img/logo.svg";
+import Button from "../../components/Button";
+import Footer from "../../components/Footer";
+import Text from "../../components/Text";
+import { COLORS, SIZES } from "../../constants/theme";
+import {
+  DropdownContent,
+  DropdownTitle,
+  EmailInput,
+  FAQSection,
+  GetStartedButton,
+  HeaderContainer,
+  Logo,
+  Navbar,
+  NavbarLeft,
+  NavbarRight,
+  OverlayContainer,
+  Section,
+  SubscribeSection,
+  WrapperCenterContent,
+  WrapperEmailInput,
+  WrapperSessionImage,
+  WrapperSessionText,
+} from "./styles";
 
 const Home = () => {
   return (
@@ -45,7 +40,7 @@ const Home = () => {
               <Logo src={logo} />
             </NavbarLeft>
             <NavbarRight>
-              <Button>Sign In</Button>
+              <Button to="/login">Sign In</Button>
             </NavbarRight>
           </Navbar>
 
@@ -214,29 +209,7 @@ const Home = () => {
         </WrapperEmailInput>
       </SubscribeSection>
 
-      <FooterSection>
-        <Text color={COLORS.gray2} marginBottom={'15px'}>Questions? Call<a href="tel:08007614632"> 0800-761-4632</a></Text>
-
-        <FooterGrid>
-          <FooterLink href="#">FAQ</FooterLink>
-          <FooterLink href="#">Investor Relations</FooterLink>
-          <FooterLink href="#">Ways to Watch</FooterLink>
-          <FooterLink href="#">Corporate Information</FooterLink>
-          <FooterLink href="#">Netflix Originals</FooterLink>
-          <FooterLink href="#">Help Center</FooterLink>
-          <FooterLink href="#">Jobs</FooterLink>
-          <FooterLink href="#">Terms of Use</FooterLink>
-          <FooterLink href="#">Contact Us</FooterLink>
-          <FooterLink href="#">Account</FooterLink>
-          <FooterLink href="#">Redeem Gift Cards</FooterLink>
-          <FooterLink href="#">Privacy</FooterLink>
-          <FooterLink href="#">Speed Test</FooterLink>
-          <FooterLink href="#">Media Center</FooterLink>
-          <FooterLink href="#">Buy Gift Cards</FooterLink>
-          <FooterLink href="#">Cookie Preferences</FooterLink>
-          <FooterLink href="#">Legal Notices</FooterLink>
-        </FooterGrid>
-      </FooterSection>
+      <Footer />
     </>
   );
 };
