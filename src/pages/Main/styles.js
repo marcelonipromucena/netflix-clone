@@ -176,7 +176,7 @@ export const MovieSliderControls = styled.div`
   justify-content: flex-end;
 `;
 export const SliderPreview = styled.div`
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   width: 125px;
   border-left: 4px solid #fff;
   padding: 1px;
@@ -197,7 +197,12 @@ export const MovieAge = styled.div`
 export const WrapperMovieListing = styled.div`
   position: relative;
   padding: 0 0 15px 50px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(248, 254, 255, 0) 100%
+  );
   z-index: 1;
 `;
 
@@ -208,7 +213,7 @@ export const MovieCategoryTitle = styled.div`
 `;
 export const Movies = styled.div`
   overflow-x: hidden;
-  white-space:nowrap;
+  white-space: nowrap;
 `;
 export const Movie = styled.a`
   display: inline-block;
@@ -217,5 +222,10 @@ export const Movie = styled.a`
 export const MovieThumb = styled.img`
   width: 275px;
   height: 155px;
-  margin:0 3px 20px 0;
+  margin: 0 3px 20px 0;
+    transition:all .5s ease;
+  &:hover {
+    width: 330px;
+    transition:all .5s ease;
+  }
 `;

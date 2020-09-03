@@ -59,7 +59,7 @@ const Login = () => {
                 <InputMessage>Your password must contain between 4 and 60 characters.</InputMessage>
               </InputGroup>
 
-              <Button width={"100%"} padding={"15px"} margin={"24px 0 12px 0"}>
+              <Button width={"100%"} padding={"15px"} margin={"24px 0 12px 0"} to={"/watch"}>
                 Sign In
               </Button>
               <Row>

@@ -8,9 +8,9 @@ import movie1 from "../../assets/img/movie1.png";
 import movie2 from "../../assets/img/movie2.png";
 import movie3 from "../../assets/img/movie3.png";
 import movie4 from "../../assets/img/movie4.png";
+import movie5 from "../../assets/img/movie5.png";
 import movie6 from "../../assets/img/movie6.png";
 import movie7 from "../../assets/img/movie7.png";
-import movie5 from "../../assets/img/movie5.png";
 import Button from "../../components/Button";
 import Footer from "../../components/Footer";
 import Text from "../../components/Text";
@@ -137,8 +137,20 @@ const Main = () => {
                 <MovieThumb src={movie7} />
               </Movie>
             </Movies>
-          </WrapperMovieListing>
-          <WrapperMovieListing>
+
+            <MovieCategoryTitle>Em alta</MovieCategoryTitle>
+            <Movies>
+              <Movie>
+                <MovieThumb src={movie1} />
+                <MovieThumb src={movie2} />
+                <MovieThumb src={movie3} />
+                <MovieThumb src={movie4} />
+                <MovieThumb src={movie5} />
+                <MovieThumb src={movie6} />
+                <MovieThumb src={movie7} />
+              </Movie>
+            </Movies>
+
             <MovieCategoryTitle>Em alta</MovieCategoryTitle>
             <Movies>
               <Movie>
